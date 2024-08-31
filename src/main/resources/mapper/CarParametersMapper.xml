@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.CarParametersMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.CarParameters">
+            <id property="carCategory" column="car_category" jdbcType="VARCHAR"/>
+            <result property="cost" column="cost" jdbcType="FLOAT"/>
+            <result property="weightLimit" column="weight_limit" jdbcType="FLOAT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        car_category,cost,weight_limit
+    </sql>
+</mapper>
