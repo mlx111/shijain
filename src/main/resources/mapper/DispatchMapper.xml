@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.DispatchMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.Dispatch">
+            <id property="dispatchId" column="dispatch_id" jdbcType="BIGINT"/>
+            <result property="carCategory" column="car_category" jdbcType="VARCHAR"/>
+            <result property="num" column="num" jdbcType="INTEGER"/>
+            <result property="productCategory" column="product_category" jdbcType="VARCHAR"/>
+            <result property="originCity" column="origin_city" jdbcType="VARCHAR"/>
+            <result property="destinationCity" column="destination_city" jdbcType="VARCHAR"/>
+            <result property="departureDate" column="departure_date" jdbcType="DATE"/>
+            <result property="arrivalDate" column="arrival_date" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        dispatch_id,car_category,num,
+        product_category,origin_city,destination_city,
+        departure_date,arrival_date
+    </sql>
+</mapper>

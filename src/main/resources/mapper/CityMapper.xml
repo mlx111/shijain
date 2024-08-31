@@ -6,8 +6,8 @@
 
     <resultMap id="BaseResultMap" type="org.example.domain.City">
             <id property="cityName" column="city_name" jdbcType="VARCHAR"/>
-            <result property="siteLongitude" column="site_longitude" jdbcType="FLOAT"/>
-            <result property="siteLatitude" column="site_latitude" jdbcType="FLOAT"/>
+            <result property="siteLongitude" column="site_longitude" jdbcType="DOUBLE"/>
+            <result property="siteLatitude" column="site_latitude" jdbcType="DOUBLE"/>
     </resultMap>
 
     <sql id="Base_Column_List">

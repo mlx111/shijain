@@ -6,11 +6,13 @@
 
     <resultMap id="BaseResultMap" type="org.example.domain.CarParameters">
             <id property="carCategory" column="car_category" jdbcType="VARCHAR"/>
-            <result property="cost" column="cost" jdbcType="FLOAT"/>
-            <result property="weightLimit" column="weight_limit" jdbcType="FLOAT"/>
+            <result property="cost" column="cost" jdbcType="DOUBLE"/>
+            <result property="standardLoadCapacity" column="standard_load_capacity" jdbcType="DOUBLE"/>
+            <result property="speed" column="speed" jdbcType="DOUBLE"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        car_category,cost,weight_limit
+        car_category,cost,standard_load_capacity,
+        speed
     </sql>
 </mapper>

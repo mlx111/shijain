@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.mapper.CityProductOverviewMapper">
+
+    <resultMap id="BaseResultMap" type="org.example.domain.CityProductOverview">
+            <result property="cityName" column="city_name" jdbcType="VARCHAR"/>
+            <result property="date" column="date" jdbcType="DATE"/>
+            <result property="productCategory" column="product_category" jdbcType="VARCHAR"/>
+            <result property="production" column="production" jdbcType="INTEGER"/>
+            <result property="consumption" column="consumption" jdbcType="INTEGER"/>
+            <result property="storage" column="storage" jdbcType="INTEGER"/>
+            <result property="arrivalQuantity" column="arrival_quantity" jdbcType="DOUBLE"/>
+            <result property="departureQuantity" column="departure_quantity" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        city_name,date,product_category,
+        production,consumption,storage,
+        arrival_quantity,departure_quantity
+    </sql>
+</mapper>
