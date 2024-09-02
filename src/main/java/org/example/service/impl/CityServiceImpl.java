@@ -15,6 +15,10 @@ import org.springframework.stereotype.Service;
 public class CityServiceImpl extends ServiceImpl<CityMapper, City>
     implements CityService{
 
+    @Override
+    public void save() {
+
+    }
 }
 
 
